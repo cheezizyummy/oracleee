@@ -4,6 +4,8 @@ availabilityDomain = "ORZB:US-ASHBURN-AD-2"
 imageId = "ocid1.image.oc1.iad.aaaaaaaaxpktqxuax4tjnmmqduyo7whrrzddsmgmm72wuzyyty36gipdmtmq"
 subnetId = 'ocid1.subnet.oc1.iad.aaaaaaaawx2e5ikmlssjng7eqtepjvhrirwdp2fixmyw5px5eskmj5tqevda'
 ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8qKHq0CgL8zjhh8q95vnjLnvVdNUY1HqTm5MQJqZ6gKfG0R3Kj8MCAVa5t7J+VJI8ZsXx7qora5wTyyEAiVJcHDYS7mEKeJCEwuN0daIFLcIbwwOLYvAjZxR57gcuSjKzYNrDBvqvIRoXxAIsrpu5YTyAut2MollB0gZoV51CJzkYPew+QOJDMceNWxOG3iogA6jgDdLwXmWsHWPzlzWK7eQeIMRqVxPj/I0E0HkrsaHAIAbO36CqKoLARysX6c7IPH6Ay8YH3jgSYAu1wicwDB+tWDTVifsEUCUm1DRSiKWhA39W4Rqd749H8dkJqDwzxX7yBMifvA1Ca60cncaL ssh-key-2023-03-12"
+bootVolumeSizeInGBs = 50
+bootVolumeVpusPerGB 120
 
 import os
 os.system("pip install oci")
@@ -24,8 +26,8 @@ logging.basicConfig(
     ]
 )
 
-ocpus = 2
-memory_in_gbs = 12
+ocpus = 1
+memory_in_gbs = 6
 wait_s_for_retry = 15
 
 logging.info("#####################################################")
